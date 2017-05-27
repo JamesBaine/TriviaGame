@@ -1,12 +1,13 @@
-.container {
-	margin-right: 33%;
-	margin-left: 33%;
-}
-
 label {
-	margin-right: 2em;
+	margin-right: 2rem ;
 }
 
-#main-header {
-	text-align: center;
+.card {
+	margin-bottom: 2rem;
+}
+
+button {
+	width: 10rem;
+	height: 3rem;
+	font-size: 1.5rem;
 }
