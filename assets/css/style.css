@@ -1,0 +1,12 @@
+.container {
+	margin-right: 33%;
+	margin-left: 33%;
+}
+
+label {
+	margin-right: 2em;
+}
+
+#main-header {
+	text-align: center;
+}
