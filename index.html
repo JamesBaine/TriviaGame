@@ -9,180 +9,221 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
 	</script>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=ABeeZee|Expletus+Sans" rel="stylesheet">
 </head>
 <body>
 
-	<div class="container">
+<header>
 
-				
-		<h1 class="offset-md-4 my-3">Trivia Game</h1>
+<nav class="navbar navbar-light bg-faded">
+  <a class="navbar-brand text-center m-2" href="#"><h1 class="text-white">Trivia Game</h1></a>
+</nav>
 
+</header>
 
-			<div class="row">
-
-			<form class="quiz col-sm-12">
-				
-				<div class="card">
-					
-					<div class="card-block">
-							
-						<h3 class="card-title">Question 1</h3>
-
-						<label>
-							<input type="radio" name="answers[1]" value="A">
-							Answer A 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="B">
-							Answer B 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="C">
-							Answer C 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="D">
-							Answer D 
-						</label>
-							
-					</div>
-
-				</div>
-			
-					<div class="card">
-					
-					<div class="card-block">
-							
-						<h3 class="card-title">Question 1</h3>
-
-						<label>
-							<input type="radio" name="answers[1]" value="A">
-							Answer A 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="B">
-							Answer B 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="C">
-							Answer C 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="D">
-							Answer D 
-						</label>
-							
-					</div>
-
-				</div>
-
-				<div class="card">
-					
-					<div class="card-block">
-							
-						<h3 class="card-title">Question 1</h3>
-
-						<label>
-							<input type="radio" name="answers[1]" value="A">
-							Answer A 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="B">
-							Answer B 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="C">
-							Answer C 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="D">
-							Answer D 
-						</label>
-							
-					</div>
-
-				</div>
-
-				<div class="card">
-					
-					<div class="card-block">
-							
-						<h3 class="card-title">Question 1</h3>
-
-						<label>
-							<input type="radio" name="answers[1]" value="A">
-							Answer A 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="B">
-							Answer B 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="C">
-							Answer C 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="D">
-							Answer D 
-						</label>
-							
-					</div>
-
-				</div>
-
-				<div class="card">
-					
-					<div class="card-block">
-							
-						<h3 class="card-title">Question 1</h3>
-
-						<label>
-							<input type="radio" name="answers[1]" value="A">
-							Answer A 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="B">
-							Answer B 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="C">
-							Answer C 
-						</label>
-				
-						<label>
-							<input type="radio" name="answers[1]" value="D">
-							Answer D 
-						</label>
-							
-					</div>
-
-				</div>
-
-				<div class="offset-md-4 mb-3">
-				<button type="submit" class="btn">Submit</button>
-				</div>
-			
-				</form>
-
-			</div>
+	<div id="timer" class="card p-2 ml-2 mt-2">
+		
+		<h5>Time left:</h5>
+			<a id="clock"></a>
+		
 
 	</div>
 
-<script type="text/javascript" src="assets/javascript/app.js"></script>
-</script>	
+	<div class="container">
+
+
+		<div class="row">
+
+			
+
+			<form id="quiz" class="col-sm-12" name="quiz">
+
+				
+				<div class="card">
+					
+					<div class="card-block">
+							
+						<h3 class="card-title">How many titles did Phil Jackson win as an NBA player?</h3>
+
+						<label>
+							<input type="radio" name="answers1" value="A" id="oneA">
+							A. Five 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers1" value="B" id="oneB">
+							B. Three 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers1" value="C" id="oneC">
+							C. One 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers1" value="D" id="oneD">
+							D. Two
+						</label>
+							
+					</div>
+
+				</div>
+
+				<div class="card">
+					
+					<div class="card-block">
+							
+						<h3 class="card-title">In which city was Jimi Hendrix born?</h3>
+
+						<label>
+							<input type="radio" name="answers2" value="A" id="twoA">
+							A. Nashville 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers2" value="B" id="twoB">
+							B. Seattle 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers2" value="C" id="twoC">
+							C. Atlanta 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers2" value="D" id="twoD">
+							D. Vancouver 
+						</label>
+							
+					</div>
+
+				</div>
+
+				<div class="card">
+					
+					<div class="card-block">
+							
+						<h3 class="card-title">Which state in Mexico produces the most tequila?</h3>
+
+						<label>
+							<input type="radio" name="answers3" value="A" id="threeA">
+							A. Jalisco 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers3" value="B" id="threeB">
+							B. Chihuahua 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers3" value="C" id="threeC">
+							C. Oaxaca 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers3" value="D" id="threeD">
+							D. Baja California 
+						</label>
+							
+					</div>
+
+				</div>
+
+				<div class="card">
+					
+					<div class="card-block">
+							
+						<h3 class="card-title">How many languages can Kobe Bryant speak fluently?</h3>
+
+						<label>
+							<input type="radio" name="answers4" value="A" id="fourA">
+							A. One 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers4" value="B" id="fourB">
+							B. Two 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers4" value="C" id="fourC">
+							C. Four 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers4" value="D" id="fourD">
+							D. Three 
+						</label>
+							
+					</div>
+
+				</div>
+
+				<div class="card">
+					
+					<div class="card-block">
+							
+						<h3 class="card-title">Which team was not part of the NHL's original six teams?</h3>
+
+						<label>
+							<input type="radio" name="answers5" value="A" id="fiveA">
+							A. New York Rangers 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers5" value="B" id="fiveB">
+							B. Pittsburg Penguins 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers5" value="C" id="fiveC">
+							C. Chicago Blackhawks 
+						</label>
+				
+						<label>
+							<input type="radio" name="answers5" value="D" id="fiveD">
+							D. Detroit Red Wings 
+						</label>
+							
+					</div>
+
+				</div>
+			
+					
+
+				<div class="text-center">
+					<input id="submit-btn" type="button" value="Submit" class="button btn text-white" onclick="check();"></input>
+				</div>
+			
+			</form>
+
+				<div id="result" class="card col-sm-12 py-3 text-center">
+
+					<h2 class="mb-3">Results!</h2>
+				
+					<h3 class="mb-3">
+						Total correct answers:
+						<a id="correct"></a>
+					</h3>
+
+					<h3>
+						Total wrong/unanswered:
+						<a id="wrong"></a>
+					</h3>
+					
+				</div>
+
+				<div class="col-sm-12 text-center">
+					<input id="start-btn" type="button" value="Start Quiz" class="button btn text-white text-center mt-5" onclick="start();"></input>
+				</div>
+
+		</div>
+
+	</div>
+
+
+
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>	
 </body>
 </html>

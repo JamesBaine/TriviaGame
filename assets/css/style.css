@@ -1,3 +1,17 @@
+* {
+	color: #3863a0;
+}
+
+body {
+	background-image: url(../images/retina_wood.png);
+	font-family: 'ABeeZee', sans-serif;
+
+}
+
+.navbar {
+	background-color: #3863a0;
+}
+
 label {
 	margin-right: 2rem ;
 }
@@ -6,8 +20,29 @@ label {
 	margin-bottom: 2rem;
 }
 
-button {
+.container {
+	margin-top: 2rem;
+}
+
+.button {
+	background-color: #3863a0;
 	width: 10rem;
 	height: 3rem;
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+#timer {
+	position: fixed;
+	float: left;
+	z-index: 1;
+}
+
+
+
+#clock {
+	font-family: 'Expletus Sans', cursive;
+	color: red;
+	text-align: center;
 	font-size: 1.5rem;
 }
